@@ -9,7 +9,7 @@ One topic goes in. Checked writing comes out, then a diagram, a web page, or an 
 | `inbox/` | the current brief: one topic per run |
 | `stages/` | the pipeline, in execution order |
 | `agents/` | the agent manual and its diagrams |
-| `README.md` | the human overview |
+| `README.md` | the public human guide |
 | `_shared/` | factory: the ladder, the source list, the defaults |
 | `_templates/` | the blank brief |
 | `_tools/` | `links.py` and `ste_check.py` |
