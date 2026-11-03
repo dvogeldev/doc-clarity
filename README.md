@@ -71,7 +71,7 @@ When you accept a file, `check.md` starts with `pass` and includes the line `hum
 
 ## License
 
-This repository is [MIT](LICENSE), copyright 2026 David Vogel.
+This repository is [MIT](LICENSE.md), copyright 2026 David Vogel.
 
 Two limits sit outside that grant:
 

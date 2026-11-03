@@ -83,4 +83,4 @@ Require a passing `check.md` for every writing file the manifest lists, and for 
 
 ## License
 
-The repo license is MIT: [LICENSE](../LICENSE). ASD-STE100 and ISO 24495-1 stay with their owners. The summaries and the tool attribution are in the License section of [README.md](../README.md).
+The repo license is MIT: [LICENSE.md](../LICENSE.md). ASD-STE100 and ISO 24495-1 stay with their owners. The summaries and the tool attribution are in the License section of [README.md](../README.md).
