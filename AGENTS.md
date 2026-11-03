@@ -8,6 +8,8 @@ One topic goes in. Checked writing comes out, then a diagram, a web page, or an 
 |---|---|
 | `inbox/` | the current brief: one topic per run |
 | `stages/` | the pipeline, in execution order |
+| `agents/` | the agent manual and its diagrams |
+| `README.md` | the human overview |
 | `_shared/` | factory: the ladder, the source list, the defaults |
 | `_templates/` | the blank brief |
 | `_tools/` | `links.py` and `ste_check.py` |
@@ -20,6 +22,7 @@ One topic goes in. Checked writing comes out, then a diagram, a web page, or an 
 | starting a new run | copy [_templates/brief.md](_templates/brief.md) to `inbox/brief.md`, then [01_doc-clarity](stages/01_doc-clarity/CONTEXT.md) | that stage's check |
 | a stage check passed and the brief climbs higher | the next stage in [CONTEXT.md](CONTEXT.md) | that stage's check |
 | asked for status | scan `stages/*/output/` and any `check.md` | report what exists |
+| asked how this repo works | [agents/README.md](agents/README.md) | that file |
 | setting up defaults | [questionnaire](setup/questionnaire.md) | answers written to `_shared/defaults.md` |
 
 ## The one rule
