@@ -63,7 +63,7 @@ Writing first. A wrong claim is cheap to fix in writing and expensive inside a v
 
 | Rung | Writes | Contract |
 |---|---|---|
-| 1. Writing | the machine file (with its Mermaid map) and the human file, at the target paths | [references/writing.md](references/writing.md) |
+| 1. Writing | the machine file and the human file, each with its Mermaid map, at the target paths | [references/writing.md](references/writing.md) |
 | 2. Diagrams | `figures.md` and editable figure sources, in the target folder | [references/diagrams.md](references/diagrams.md) |
 | 3. Web page | one self-contained `page.html`, in the target folder | [references/web-pages.md](references/web-pages.md) |
 | 4. Explainer video | `narration.md`, `shots.md`, `manifest.md`, in the target folder | [references/videos.md](references/videos.md) |
@@ -88,4 +88,4 @@ When asked for the status of a run, look at the run's files at their target path
 | A run writes outside the target project | Never. The target repo holds the run's files and its record. |
 | A rung runs out of order | Writing runs first. No rung is skipped except the web page rule above. |
 | A delivered repo doc carries the run's frontmatter | Strip the run's frontmatter from a delivered README or agent map unless the requester wants it kept. |
-| A machine file has no Mermaid map | Every machine file carries a Mermaid map near the top. The map replaces the prose it repeats. |
+| A writing file has no Mermaid map | Every writing file carries a Mermaid map near the top. The map replaces the prose it repeats. |

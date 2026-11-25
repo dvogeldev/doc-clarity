@@ -19,14 +19,15 @@ Apply every rule in [ste-issue-9.md](ste-issue-9.md). The output shows the effec
 
 Also apply the replacement table in [ste-rules.md](ste-rules.md). That table is the word list `ste_check.py` rejects. When you need a word the table does not list, follow the digest: use a short high-frequency word, or a technical name the brief already gives. Do not invent a technical noun or a technical verb.
 
-## Map in the machine file
+## Map in every writing file
 
-Every machine file carries one Mermaid diagram near the top. The diagram maps the document: its parts, its routes, or its flow.
+Every writing file - the machine file, the 80-percent file, and the ISO file - carries one Mermaid diagram near the top. The diagram maps the document: its parts, its routes, or its flow.
 
 - The diagram repeats claims the text already makes. It adds none.
-- Put each claim in a node label or an edge label. A machine reader consumes the map without the prose.
+- Put each claim in a node label or an edge label. The reader consumes the map without the prose.
 - Replace the prose the diagram carries. Keep prose only for what a label cannot hold.
 - Use one diagram for a simple map. Use two when a map and a route flow are both needed.
+- In the ISO file, write the labels in that file's own voice. Plain language wins in the labels.
 
 ## Human-readable STE file
 
@@ -46,7 +47,7 @@ The other 20 percent is tone. You may use "you" and contractions. You may addres
 
 Apply every principle in [plain-language.md](plain-language.md). Follow that file only.
 
-Do not apply [ste-issue-9.md](ste-issue-9.md). Do not apply the 80 percent target. Do not run `ste_check.py` on this file.
+Do not apply [ste-issue-9.md](ste-issue-9.md). Do not apply the 80 percent target. Do not run `ste_check.py` on this file. The map rule above applies: write its labels in plain language.
 
 ## Meaning
 
