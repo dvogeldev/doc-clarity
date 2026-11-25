@@ -19,6 +19,15 @@ Apply every rule in [ste-issue-9.md](ste-issue-9.md). The output shows the effec
 
 Also apply the replacement table in [ste-rules.md](ste-rules.md). That table is the word list `ste_check.py` rejects. When you need a word the table does not list, follow the digest: use a short high-frequency word, or a technical name the brief already gives. Do not invent a technical noun or a technical verb.
 
+## Map in the machine file
+
+Every machine file carries one Mermaid diagram near the top. The diagram maps the document: its parts, its routes, or its flow.
+
+- The diagram repeats claims the text already makes. It adds none.
+- Put each claim in a node label or an edge label. A machine reader consumes the map without the prose.
+- Replace the prose the diagram carries. Keep prose only for what a label cannot hold.
+- Use one diagram for a simple map. Use two when a map and a route flow are both needed.
+
 ## Human-readable STE file
 
 Write this file only when `ste-human` is `80`.
