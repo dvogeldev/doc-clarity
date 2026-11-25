@@ -1,30 +1,26 @@
-# Doc clarity
+# Doc clarity - the skill source
 
-One topic goes in. Checked writing comes out, then a diagram, a web page, or an explainer video when the brief climbs. Each rung is a file a person can open and correct before the next rung starts.
+This repository develops the doc-clarity skill. The installed copy that agents run lives at `/home/david/.agents/skills/doc-clarity/`. A run writes only into the target project it is pointed at. This repository holds the skill and the archive. It holds no run state.
+
+Claude Code / agents that look for `CLAUDE.md`: this file is the entry point.
 
 ## Where things live
 
 | Folder | What it holds |
 |---|---|
-| `inbox/` | the current brief: one topic per run |
-| `stages/` | the pipeline, in execution order |
-| `agents/` | the agent manual and its diagrams |
-| `README.md` | the public human guide |
-| `_shared/` | factory: the ladder, the source list, the defaults |
-| `_templates/` | the blank brief |
-| `_tools/` | `links.py` and `ste_check.py` |
-| `setup/` | one-time questions for the defaults |
+| `skill/` | the skill source: `SKILL.md`, `defaults.md`, `references/`, `_tools/ste_check.py` |
+| `archive/` | records of runs made under the old workspace model |
+| `_tools/` | `links.py` checks every link resolves |
 
-## Route by what just happened
+## Route by what you want
 
-| If | Go to | Then stop at |
+| If | Go to | Then |
 |---|---|---|
-| starting a new run | copy [_templates/brief.md](_templates/brief.md) to `inbox/brief.md`, then [01_doc-clarity](stages/01_doc-clarity/CONTEXT.md) | that stage's check |
-| a stage check passed and the brief climbs higher | the next stage in [CONTEXT.md](CONTEXT.md) | that stage's check |
-| asked for status | scan `stages/*/output/` and any `check.md` | report what exists |
-| asked how this repo works | [agents/README.md](agents/README.md) | that file |
-| setting up defaults | [questionnaire](setup/questionnaire.md) | answers written to `_shared/defaults.md` |
+| you are running doc-clarity | the installed skill at `/home/david/.agents/skills/doc-clarity/SKILL.md` | that file |
+| you are changing the skill | `skill/` in this repo | copy the change to the installed folder, then commit |
+| you want a past run's record | `archive/` | read it there |
+| you are checking repo health | `python3 -I _tools/links.py` | fix what it reports |
 
 ## The one rule
 
-Nothing moves to the next stage until the last stage's check passes. A run may stop after any pass.
+A change to the skill is made in `skill/` here first. Then the same change is copied to `/home/david/.agents/skills/doc-clarity/`. The two copies must not drift.
